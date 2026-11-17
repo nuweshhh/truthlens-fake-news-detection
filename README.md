@@ -2,7 +2,7 @@
 
 A cross-dataset fake news detector for English text, built as part of the Junior Natural Language Processing Specialist internship at YuvaIntern.
 
-> **Status: Week 1 (planning) complete.** This repository currently holds the strategic plan and literature review. Code will be added in Weeks 2 to 4.
+> **Status: Week 2 (data preprocessing and exploratory analysis) complete.** The repository holds the Week 1 plan, the cleaning code and an exploratory analysis of LIAR. Modelling follows in Weeks 3 and 4.
 
 ## Problem
 
@@ -58,13 +58,21 @@ Macro-F1 is the headline metric. Accuracy, precision, recall and ROC-AUC are als
 truthlens-fake-news-detection/
 ├── .gitignore       # keeps datasets, model weights and environments out of Git
 ├── README.md
-├── docs/            # Week 1 report (plan and literature review)
+├── docs/            # reports and EDA figures
 ├── data/            # datasets (not committed)
 ├── notebooks/       # experiments
 └── src/             # pipeline and model code
 ```
 
-Raw datasets and trained model weights are not committed because of their size. Download links and instructions will be added here once the data pipeline is built in Week 2.
+Raw datasets and trained model weights are not committed because of their size. Download instructions are in `data/README.md`.
+
+## Week 2 results (LIAR)
+
+- 12,836 statements (10,269 / 1,284 / 1,283); binary mapping gives 7,167 real and 5,669 fake.
+- Job title and state are empty in 27.9% and 21.4% of rows; text is already clean (no URLs or HTML), so cleaning changes only 34 statements.
+- Length differs only slightly between classes (mean 18.7 vs 17.6 words, effect size 0.078).
+- Credit-history columns include the current statement (99.7% of applicable rows), so they are excluded from text models.
+- Run `python src/eda_liar.py` after downloading the data to reproduce the figures in `docs/figures/` and the summary in `docs/week2_liar_eda_summary.json`.
 
 ## Tools
 
