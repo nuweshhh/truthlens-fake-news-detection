@@ -1,0 +1,162 @@
+[
+ {
+  "title": "Error: real predicted fake",
+  "label": "mostly-true",
+  "truth": 0,
+  "pred_fake_prob": 0.888,
+  "text": "Says U.S. Rep. Connie Mack IV passed only one bill in seven years.",
+  "feats": [
+   [
+    "Rep",
+    0.159
+   ],
+   [
+    "seven",
+    0.078
+   ],
+   [
+    "IV",
+    0.055
+   ],
+   [
+    "Says",
+    0.048
+   ],
+   [
+    "in",
+    -0.048
+   ],
+   [
+    "years",
+    0.032
+   ],
+   [
+    "only",
+    0.03
+   ],
+   [
+    "bill",
+    0.021
+   ]
+  ]
+ },
+ {
+  "title": "Error: fake predicted real",
+  "label": "false",
+  "truth": 1,
+  "pred_fake_prob": 0.037,
+  "text": "Of the roughly 15 percent of Americans who dont have health insurance, half of them made more than $50,000 a year.",
+  "feats": [
+   [
+    "than",
+    -0.064
+   ],
+   [
+    "more",
+    -0.046
+   ],
+   [
+    "of",
+    -0.042
+   ],
+   [
+    "half",
+    -0.039
+   ],
+   [
+    "percent",
+    -0.037
+   ],
+   [
+    "them",
+    0.029
+   ],
+   [
+    "000",
+    -0.023
+   ],
+   [
+    "roughly",
+    0.012
+   ]
+  ]
+ },
+ {
+  "title": "Correct: fake",
+  "label": "pants-fire",
+  "truth": 1,
+  "pred_fake_prob": 0.934,
+  "text": "Says President Barack Obama is a socialist.",
+  "feats": [
+   [
+    "Obama",
+    0.091
+   ],
+   [
+    "is",
+    0.054
+   ],
+   [
+    "Says",
+    0.053
+   ],
+   [
+    "Barack",
+    0.031
+   ],
+   [
+    "President",
+    0.024
+   ],
+   [
+    "socialist",
+    -0.015
+   ],
+   [
+    "a",
+    0.002
+   ]
+  ]
+ },
+ {
+  "title": "Correct: real",
+  "label": "mostly-true",
+  "truth": 0,
+  "pred_fake_prob": 0.03,
+  "text": "The federal debt is more than $14 trillion, almost equal to the size of our entire economy, and every child born today inherits a $45,000 share of the national debt before they take their first breath.",
+  "feats": [
+   [
+    "debt",
+    -0.051
+   ],
+   [
+    "share",
+    -0.035
+   ],
+   [
+    "more",
+    -0.026
+   ],
+   [
+    "of",
+    -0.025
+   ],
+   [
+    "than",
+    -0.025
+   ],
+   [
+    "14",
+    -0.019
+   ],
+   [
+    "000",
+    -0.018
+   ],
+   [
+    "their",
+    0.017
+   ]
+  ]
+ }
+]
