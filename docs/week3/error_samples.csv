@@ -1,0 +1,17 @@
+label,pred,conf,statement,speaker,subject
+mostly-true,1,0.8335888055107785,Says U.S. Rep. Connie Mack IV passed only one bill in seven years.,american-bridge-21st-century,"message-machine-2012,voting-record"
+true,1,0.7574817045631173,I said no to these big bank bailouts.,lloyd-doggett,"economy,message-machine,voting-record"
+half-true,1,0.749148753620382,Says my plan is a property tax cut.,stephen-sweeney,"state-budget,taxes"
+half-true,1,0.5956378538608926,Says Joe Heck voted to shut down the government.,catherine-cortez-masto,voting-record
+mostly-true,1,0.5658810690135176,Says Barack Obama is the first president in modern history not to have a single year of 3 percent growth.,donald-trump,economy
+half-true,1,0.5599273392449279,Muslim nations did not call out the people who celebrated the 9/11 attacks.,bill-oreilly,"islam,terrorism"
+half-true,1,0.5455220067018277,Barack Obama has provided guns to Mexican drug cartels.,rick-perry,"drugs,guns,legal-issues"
+half-true,1,0.5199594476763286,Says Texas GOP platform calls for end to teaching critical thinking in public schools.,gail-collins,education
+false,0,1.3089465233690547,"Of the roughly 15 percent of Americans who dont have health insurance, half of them made more than $50,000 a year.",rand-paul,"health-care,income"
+false,0,1.1618166024582728,"While (Charlie Crist) was governor, utility costs went up 30 percent and went from below the national average to above the national average. Since I got elected, utility rates have come down 11 percent and now we are below the average.",rick-scott,"debates,energy,message-machine-2014"
+false,0,0.9812207906121672,"More than 1,000 American soldiers have lost their lives in Afghanistan in the last 27 months. This is more than the combined total of the nine years before.",chain-email,"afghanistan,military"
+false,0,0.8682976654600955,"Says Texas has so few gas-pump inspectors in the field, the HEBs of this state, the Brookshires of this state, theyre calibrating their own gas pumps. The (Texas Department of Agriculture) just sends them the stickers and they calibrate them.",hank-gilbert,"consumer-safety,energy,job-accomplishments"
+false,0,0.8336979734083296,"In countries where there are higher, more strict gun laws, there is more gun violence.",eric-bolling,guns
+false,0,0.7948744176578514,Congress' approval rating is 11 percent. You know who's higher? Dick Cheney and HMOs.,bill-richardson,job-accomplishments
+false,0,0.782049295037972,Beaverton enjoys the most diverse population (by percentage of population) among Oregon cities.,city-beaverton,diversity
+barely-true,0,0.7810322997757104,Says that 9 million to 50 million undocumented immigrants live in the United States.,texas-federation-republican-women,"immigration,population"

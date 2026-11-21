@@ -2,7 +2,7 @@
 
 A cross-dataset fake news detector for English text, built as part of the Junior Natural Language Processing Specialist internship at YuvaIntern.
 
-> **Status: Week 2 (data preprocessing and exploratory analysis) complete.** The repository holds the Week 1 plan, the cleaning code and an exploratory analysis of LIAR. Modelling follows in Weeks 3 and 4.
+> **Status: Week 3 (baseline models and experiments) complete.** The repository holds the Week 1 plan, the cleaning code, an exploratory analysis of LIAR, and classical baseline experiments. DistilBERT fine-tuning, the cross-dataset test and the demo follow in Week 4.
 
 ## Problem
 
@@ -73,6 +73,15 @@ Raw datasets and trained model weights are not committed because of their size. 
 - Length differs only slightly between classes (mean 18.7 vs 17.6 words, effect size 0.078).
 - Credit-history columns include the current statement (99.7% of applicable rows), so they are excluded from text models.
 - Run `python src/eda_liar.py` after downloading the data to reproduce the figures in `docs/figures/` and the summary in `docs/week2_liar_eda_summary.json`.
+
+## Week 3 results (LIAR, text only)
+
+- Models compared: majority class, logistic regression, linear SVM, Multinomial and Complement Naive Bayes, a small MLP; 27 configurations scored on the validation set.
+- Test macro-F1 (1,279 statements, 95% bootstrap intervals): majority 0.362; unigram logistic regression 0.597; linear SVM 0.604; MLP 0.607. All trained models are statistically indistinguishable (every paired difference interval contains zero).
+- Removing stop words was the only preprocessing change that clearly hurt (-0.025 validation macro-F1).
+- A tree model on the speaker credit-history columns alone reaches 0.716 test macro-F1, above every text model, because those counts include the current statement. Text-only inputs are therefore used.
+- The DistilBERT fine-tuning and ISOT experiments have not been run yet.
+- Reproduce: `python src/eda_liar.py`, `python src/week3_validation_experiments.py`, `python src/week3_test_evaluation.py`, `python src/week3_figures.py` (outputs in `docs/week3/` and `docs/figures/`).
 
 ## Tools
 
